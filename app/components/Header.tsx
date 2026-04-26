@@ -59,28 +59,33 @@ export default function Header() {
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="/services" className="dropdown-item">
+                    <a href="/services/web-development" className="dropdown-item">
                       Web Development
                     </a>
                   </li>
                   <li>
-                    <a href="/services" className="dropdown-item">
-                      SEO Optimization
-                    </a>
-                  </li>
-                  <li>
-                    <a href="/services" className="dropdown-item">
+                    <a href="/services/ui-ux-design" className="dropdown-item">
                       UI/UX Design
                     </a>
                   </li>
                   <li>
-                    <a href="/services" className="dropdown-item">
-                      Graphics Design
+                    <a href="/services/seo-optimization" className="dropdown-item">
+                      SEO Optimization
                     </a>
                   </li>
                   <li>
-                    <a href="/services" className="dropdown-item">
-                      Maintenance and Support
+                    <a href="/services/maintenance-support" className="dropdown-item">
+                      Maintenance & Support
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/responsive-design" className="dropdown-item">
+                      Responsive Design
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/services/website-hosting" className="dropdown-item">
+                      Website Hosting
                     </a>
                   </li>
                 </ul>

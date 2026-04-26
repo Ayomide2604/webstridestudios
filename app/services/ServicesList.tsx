@@ -10,8 +10,7 @@ export default function ServicesList() {
         "E-commerce Solutions",
         "API Development",
         "Progressive Web Apps"
-      ],
-      price: "Starting at $2,999"
+      ]
     },
     {
       title: "UI/UX Design", 
@@ -23,8 +22,7 @@ export default function ServicesList() {
         "Wireframing & Prototyping",
         "Brand Identity Design",
         "Design Systems"
-      ],
-      price: "Starting at $1,999"
+      ]
     },
     {
       title: "SEO Optimization",
@@ -36,8 +34,7 @@ export default function ServicesList() {
         "Keyword Research",
         "Content Strategy",
         "Local SEO"
-      ],
-      price: "Starting at $1,499"
+      ]
     },
     {
       title: "Maintenance and Support",
@@ -49,8 +46,7 @@ export default function ServicesList() {
         "Performance Optimization",
         "Content Updates",
         "24/7 Support"
-      ],
-      price: "Starting at $299/month"
+      ]
     },
     {
       title: "Responsive Design",
@@ -62,8 +58,7 @@ export default function ServicesList() {
         "Performance Optimization",
         "Touch-Friendly Interfaces",
         "Adaptive Layouts"
-      ],
-      price: "Included with Web Development"
+      ]
     },
     {
       title: "Website Hosting",
@@ -75,8 +70,7 @@ export default function ServicesList() {
         "Daily Backups",
         "CDN Integration",
         "Email Hosting"
-      ],
-      price: "Starting at $49/month"
+      ]
     }
   ];
 
@@ -118,10 +112,9 @@ export default function ServicesList() {
                   </ul>
                 </div>
                 
-                <div className="d-flex justify-content-between align-items-center border-top pt-3">
-                  <span className="text-primary fw-bold">{service.price}</span>
-                  <a href="/contact" className="btn btn-primary btn-sm">
-                    Get Quote
+                <div className="text-center mt-3">
+                  <a href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`} className="btn btn-primary">
+                    Learn More
                   </a>
                 </div>
               </div>
