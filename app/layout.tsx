@@ -4,6 +4,7 @@ import Script from "next/script";
 import Spinner from "./components/Spinner";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Webstride Studios",
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <ScrollToTop/>
         </main>
         <Script src="/assets/js/theme-switcher.js" />
         <Script src="/assets/vendor/jarallax/dist/jarallax.min.js" />
