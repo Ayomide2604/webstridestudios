@@ -3,7 +3,7 @@ import ThemeSwitch from './ThemeSwitch'
 
 export default function Header() {
   return (
-    <header className="header navbar navbar-expand-lg bg-light navbar-sticky">
+    <header className="header navbar navbar-expand-lg bg-light navbar-sticky ">
       <div className="container px-3">
         <a href="/" className="navbar-brand pe-3 pe-lg-5 ms-5">
           <Image 

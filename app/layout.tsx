@@ -31,6 +31,10 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+        />
+        <link
+          rel="stylesheet"
           media="screen"
           href="/assets/css/theme.min.css"
         />
