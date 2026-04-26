@@ -7,11 +7,15 @@ export default function HeroSection() {
   data-speed="0.4"
   data-bs-theme="dark"
 >
-  <span className="position-absolute top-0 start-0 w-100 h-100 bg-gradient-dark-translucent" />
+  <span className="position-absolute top-0 start-0 w-100 h-100 " />
   <div
     className="jarallax-img"
     style={{
-      backgroundImage: "url(assets/img/hero/hero.jpg)"
+      backgroundImage: "url(assets/img/hero/hero.jpg)",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+      objectFit: "contain"
     }}
   />
   <div className="position-relative text-center zindex-5 overflow-hidden pt-4 py-md-5">
@@ -59,53 +63,48 @@ export default function HeroSection() {
               {/* Item */}
               <div className="swiper-slide">
                 <h2 className="display-2 from-start mb-lg-4">
-                  The Best IT Solutions for Your Business
+                  Digital Solutions That Grow Your Business
                 </h2>
                 <div className="from-end">
                   <p className="fs-xl text-light opacity-70 pb-2 mb-lg-5">
-                    We provide the wide range of high quality IT services and
-                    best practices solutions to our customers making their
-                    business better.
+                    Based in Edmonton, serving businesses nationwide with custom websites that convert. We combine technical expertise with creative vision to deliver websites that drive measurable results.
                   </p>
                 </div>
                 <div className="scale-up delay-1">
-                  <a href="#" className="btn btn-primary shadow-primary btn-lg">
-                    Start your project
+                  <a href="/contact" className="btn btn-primary shadow-primary btn-lg">
+                    Start project
                   </a>
                 </div>
               </div>
               {/* Item */}
               <div className="swiper-slide">
                 <h2 className="display-2 from-start mb-lg-4">
-                  Award-Winning Software Development
+                  Custom Web Development & Design
                 </h2>
                 <div className="from-end">
                   <p className="fs-xl text-light opacity-70 pb-2 mb-lg-5">
-                    We build complex web, desktop and mobile applications. With
-                    us you get quality software and perfect service every time.
+                    From concept to deployment, we build powerful digital experiences with modern technologies including Web Development, UI/UX Design, and SEO Optimization that engage your audience.
                   </p>
                 </div>
                 <div className="scale-up delay-1">
-                  <a href="#" className="btn btn-primary shadow-primary btn-lg">
-                    View case studies
+                  <a href="/contact" className="btn btn-primary shadow-primary btn-lg">
+                    Start project
                   </a>
                 </div>
               </div>
               {/* Item */}
               <div className="swiper-slide">
                 <h2 className="display-2 from-start mb-lg-4">
-                  24/7 Tech &amp; Business Support
+                  Complete Web Solutions for Your Business
                 </h2>
                 <div className="from-end">
                   <p className="fs-xl text-light opacity-70 pb-2 mb-lg-5">
-                    We ensure lifetime support of all applications we've built.
-                    Our support department is a team of professionals who will
-                    assist you 24/7.
+                    We are a premier web development company proudly based in Edmonton, Canada, serving businesses across the entire country with personalized approach and commitment to excellence.
                   </p>
                 </div>
                 <div className="scale-up delay-1">
-                  <a href="#" className="btn btn-primary shadow-primary btn-lg">
-                    Work with us
+                  <a href="/contact" className="btn btn-primary shadow-primary btn-lg">
+                    Start project
                   </a>
                 </div>
               </div>
@@ -142,14 +141,14 @@ export default function HeroSection() {
       </a>
       <a
         href="#"
-        className="btn btn-icon btn-secondary btn-youtube rounded-circle me-2"
-        aria-label="YouTube"
+        className="btn btn-icon btn-secondary btn-instagram rounded-circle me-2"
+        aria-label="Instagram"
       >
-        <i className="bx bxl-youtube" />
+        <i className="bx bxl-instagram" />
       </a>
     </div>
-    <a href="#" className="nav-link px-0">
-      Our case studies
+    <a href="/portfolio" className="nav-link px-0 text-white">
+      View our portfolio
       <i className="bx bx-right-arrow-circle fs-4 ms-2" />
     </a>
   </div>
