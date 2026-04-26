@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 import Spinner from "./components/Spinner";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Silicon | Software Dev Agency Landing",
-  description: "Silicon - Multipurpose Technology Bootstrap Template",
+  title: "Webstride Studios",
+  description: "Webstride Studios - Creative Digital Agency",
 };
 
 export default function RootLayout({
@@ -34,7 +36,11 @@ export default function RootLayout({
       </head>
       <body>
         <Spinner />
-        {children}
+        <main className="page-wrapper">
+          <Header />
+          {children}
+          <Footer />
+        </main>
         <Script src="/assets/js/theme-switcher.js" />
         <Script src="/assets/vendor/jarallax/dist/jarallax.min.js" />
         <Script src="/assets/vendor/swiper/swiper-bundle.min.js" />
