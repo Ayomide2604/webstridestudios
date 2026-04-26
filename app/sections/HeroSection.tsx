@@ -87,8 +87,8 @@ export default function HeroSection() {
                   </p>
                 </div>
                 <div className="scale-up delay-1">
-                  <a href="/contact" className="btn btn-primary shadow-primary btn-lg">
-                    Start project
+                  <a href="/portfolio" className="btn btn-primary shadow-primary btn-lg">
+                    View portfolio
                   </a>
                 </div>
               </div>
@@ -103,8 +103,8 @@ export default function HeroSection() {
                   </p>
                 </div>
                 <div className="scale-up delay-1">
-                  <a href="/contact" className="btn btn-primary shadow-primary btn-lg">
-                    Start project
+                  <a href="/services" className="btn btn-primary shadow-primary btn-lg">
+                    Our services
                   </a>
                 </div>
               </div>
@@ -119,11 +119,11 @@ export default function HeroSection() {
   <div className="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
     <div className="d-flex mb-4 mb-sm-0">
       <a
-        href="#"
-        className="btn btn-icon btn-secondary btn-linkedin rounded-circle me-2"
-        aria-label="LinkedIn"
+        href="mailto:contact@webstridestudios.ca"
+        className="btn btn-icon btn-secondary rounded-circle me-2"
+        aria-label="Email"
       >
-        <i className="bx bxl-linkedin" />
+        <i className="bx bx-envelope" />
       </a>
       <a
         href="#"
@@ -147,10 +147,10 @@ export default function HeroSection() {
         <i className="bx bxl-instagram" />
       </a>
     </div>
-    <a href="/portfolio" className="nav-link px-0 text-white">
+    {/* <a href="/portfolio" className="nav-link px-0 text-white">
       View our portfolio
       <i className="bx bx-right-arrow-circle fs-4 ms-2" />
-    </a>
+    </a> */}
   </div>
 </section>
 
