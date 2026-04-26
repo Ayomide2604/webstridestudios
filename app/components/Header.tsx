@@ -1,12 +1,27 @@
+import Image from 'next/image'
 import ThemeSwitch from './ThemeSwitch'
 
 export default function Header() {
   return (
     <header className="header navbar navbar-expand-lg bg-light navbar-sticky">
       <div className="container px-3">
-        <a href="/" className="navbar-brand pe-3">
-          <img src="/assets/img/logo.svg" width="47" alt="Webstride" />
-          Webstride
+        <a href="/" className="navbar-brand pe-3 pe-lg-5 ms-5">
+          <Image 
+            src="/assets/img/2.svg" 
+            width={80} 
+            height={80}
+            alt="Webstride" 
+            style={{transform: 'scale(2.4)'}}
+            className="theme-logo d-lg-none"
+          />
+          <Image 
+            src="/assets/img/2.svg" 
+            width={80} 
+            height={80}
+            alt="Webstride" 
+            style={{transform: 'scale(2.5)'}}
+            className="theme-logo d-none d-lg-block"
+          />
         </a>
 
         <div id="navbarNav" className="offcanvas offcanvas-end">
@@ -20,8 +35,8 @@ export default function Header() {
             ></button>
           </div>
 
-          <div className="offcanvas-body">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <div className="offcanvas-body" >
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-3 ms-lg-0">
               <li className="nav-item">
                 <a href="/" className="nav-link active" aria-current="page">
                   Home

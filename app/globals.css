@@ -73,3 +73,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* Theme-aware logo styling */
+.theme-logo {
+  transition: filter 0.3s ease;
+}
+
+[data-bs-theme="dark"] .theme-logo {
+  filter: brightness(0) invert(1);
+}

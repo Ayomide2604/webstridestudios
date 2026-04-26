@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="row pb-5">
           <div className="col-lg-4 col-md-6">
             <div className="navbar-brand text-white p-0 me-0 mb-3 mb-lg-4">
-              <img src="/assets/img/logo.svg" width={47} alt="Webstride Studios" />
+              {/* <img src="/assets/img/logo.svg" width={47} alt="Webstride Studios" /> */}
               Webstride Studios
             </div>
             <p className="fs-sm text-light opacity-70 pb-lg-3 mb-4">
