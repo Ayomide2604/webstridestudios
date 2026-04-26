@@ -1,9 +1,17 @@
 (function () {
-  window.onload = function () {
+  function removePreloader() {
     const preloader = document.querySelector(".page-loading");
-    preloader.classList.remove("active");
-    setTimeout(function () {
-      preloader.remove();
-    }, 1000);
-  };
+    if (preloader) {
+      preloader.classList.remove("active");
+      setTimeout(function () {
+        preloader.remove();
+      }, 1000);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    window.addEventListener("load", removePreloader);
+  } else {
+    removePreloader();
+  }
 })();
