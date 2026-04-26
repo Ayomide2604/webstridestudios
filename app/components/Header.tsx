@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container px-3">
         <a href="/" className="navbar-brand pe-3 pe-lg-5 ms-5">
           <Image 
-            src="/assets/img/2.svg" 
+            src="/assets/img/logo/2.svg" 
             width={80} 
             height={80}
             alt="Webstride" 
@@ -15,7 +15,7 @@ export default function Header() {
             className="theme-logo d-lg-none"
           />
           <Image 
-            src="/assets/img/2.svg" 
+            src="/assets/img/logo/2.svg" 
             width={80} 
             height={80}
             alt="Webstride" 
