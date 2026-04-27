@@ -68,7 +68,7 @@ export default function ServiceDetailProcess({ service }: ServiceDetailProcessPr
       <div className="row g-4">
         {processSteps.map((step: any, index: number) => (
           <div key={index} className="col-md-6 col-lg-3">
-            <div className="card border-0 shadow-sm h-100 p-4 text-center">
+            <div className="card border-0 shadow-sm h-100 p-4 text-center d-inline-flex align-items-center justify-content-center">
               <div className="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style={{width: "60px", height: "60px"}}>
                 <span className="h5 mb-0 fw-bold">{step.step}</span>
               </div>
