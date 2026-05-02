@@ -101,12 +101,6 @@ export default function Header() {
               </li>
 
               <li className="nav-item">
-                <a href="/knowledge-base" className={`nav-link ${pathname === '/knowledge-base' ? 'active' : ''}`}>
-                  Knowledge Base
-                </a>
-              </li>
-
-              <li className="nav-item">
                 <a href="/contact" className={`nav-link ${pathname === '/contact' || pathname.startsWith('/contact/') ? 'active' : ''}`}>
                   Contact Us
                 </a>
