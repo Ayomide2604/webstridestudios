@@ -17,13 +17,15 @@ export default function TestimonialCard({ quote, author, position, avatar }: Tes
         </p>
       </blockquote>
       <figcaption className="card-footer border-0 d-flex align-items-center w-100 pb-3 pt-0">
-        <img
-          src={avatarSrc}
-          width={48}
-          className="rounded-circle"
-          alt={author}
-        />
-        <div className="ps-3">
+        <div className="ms-4">
+          <img
+            src={avatarSrc}
+            width={48}
+            className="rounded-circle"
+            alt={author}
+          />
+        </div>
+        <div className="ps-4">
           <h5 className="fw-semibold lh-base mb-0">{author}</h5>
           <span className="fs-sm text-muted">
             {position}
