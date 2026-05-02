@@ -119,7 +119,7 @@ export default function HeroSection() {
   <div className="container d-flex flex-column flex-sm-row align-items-center justify-content-between position-relative zindex-5 pb-5">
     <div className="d-flex mb-4 mb-sm-0">
       <a
-        href="mailto:contact@webstridestudios.ca"
+        href="mailto:info@webstridestudios.ca"
         className="btn btn-icon btn-secondary rounded-circle me-2"
         aria-label="Email"
       >

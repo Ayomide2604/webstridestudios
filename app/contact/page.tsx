@@ -25,8 +25,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="h6 mb-1">Email</h3>
-                  <a href="mailto:contact@webstridestudios.ca" className="text-primary text-decoration-none">
-                    contact@webstridestudios.ca
+                  <a href="mailto:info@webstridestudios.ca" className="text-primary text-decoration-none">
+                    info@webstridestudios.ca
                   </a>
                   <p className="text-muted small mb-0">We'll respond within 24 hours</p>
                 </div>
@@ -88,13 +88,23 @@ export default function ContactPage() {
                 Fill out the form below and we'll get back to you as soon as possible.
               </p>
               
-              <form className="needs-validation" noValidate>
+              <form 
+                action="https://api.web3forms.com/submit" 
+                method="POST" 
+                className="needs-validation"
+                noValidate
+              >
+                <input type="hidden" name="access_key" value="3ece9aec-1979-4aff-b2bb-e325979a7403" />
+                <input type="hidden" name="subject" value="New Contact Form Submission from Webstride Studios" />
+                <input type="hidden" name="from_name" value="Webstride Studios Contact Form" />
+                <input type="hidden" name="redirect" value={`${typeof window !== 'undefined' ? window.location.origin : ''}/contact/thank-you`} />
                 <div className="row g-3 g-sm-4">
                   <div className="col-sm-6">
                     <label htmlFor="name" className="form-label">Name *</label>
                     <input 
                       type="text" 
                       id="name" 
+                      name="name"
                       className="form-control form-control-lg" 
                       required 
                     />
@@ -108,6 +118,7 @@ export default function ContactPage() {
                     <input 
                       type="email" 
                       id="email" 
+                      name="email"
                       className="form-control form-control-lg" 
                       required 
                     />
@@ -121,6 +132,7 @@ export default function ContactPage() {
                     <input 
                       type="tel" 
                       id="phone" 
+                      name="phone"
                       className="form-control form-control-lg" 
                     />
                   </div>
@@ -130,13 +142,14 @@ export default function ContactPage() {
                     <input 
                       type="text" 
                       id="company" 
+                      name="company"
                       className="form-control form-control-lg" 
                     />
                   </div>
                   
                   <div className="col-12">
                     <label htmlFor="service" className="form-label">Service Interest</label>
-                    <select id="service" className="form-select form-select-lg">
+                    <select id="service" name="service" className="form-select form-select-lg">
                       <option value="">Select a service...</option>
                       <option value="web-development">Web Development</option>
                       <option value="ui-ux-design">UI/UX Design</option>
@@ -151,6 +164,7 @@ export default function ContactPage() {
                     <label htmlFor="message" className="form-label">Message *</label>
                     <textarea 
                       id="message" 
+                      name="message"
                       className="form-control form-control-lg" 
                       rows={5} 
                       required

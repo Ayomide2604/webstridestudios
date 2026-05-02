@@ -19,8 +19,8 @@ export default function Contact() {
                 <i className="bi bi-envelope text-primary fs-4 me-3 mt-1"></i>
                 <div>
                   <h6 className="mb-1">Email</h6>
-                  <a href="mailto:contact@webstridestudios.ca" className="nav-link text-body p-0">
-                    contact@webstridestudios.ca
+                  <a href="mailto:info@webstridestudios.ca" className="nav-link text-body p-0">
+                    info@webstridestudios.ca
                   </a>
                 </div>
               </div>
@@ -50,13 +50,22 @@ export default function Contact() {
           <div className="col-lg-6">
             <div className="card border-0 shadow-sm">
               <div className="card-body p-4 p-lg-5">
-                <form className="needs-validation" noValidate>
+                <form 
+                  action="https://api.web3forms.com/submit" 
+                  method="POST" 
+                  className="needs-validation"
+                  noValidate
+                >
+                  <input type="hidden" name="access_key" value="3ece9aec-1979-4aff-b2bb-e325979a7403" />
+                  <input type="hidden" name="subject" value="New Contact Form Submission from Webstride Studios" />
+                  <input type="hidden" name="from_name" value="Webstride Studios Contact Form" />
+                  <input type="hidden" name="redirect" value={`${typeof window !== 'undefined' ? window.location.origin : ''}/contact/thank-you`} />
                   <div className="row g-3 g-sm-4">
                     <div className="col-sm-6">
                       <label htmlFor="name" className="form-label">Name *</label>
                       <input 
                         type="text" 
-                        id="name" 
+                        name="name" 
                         className="form-control form-control-lg" 
                         required 
                       />
@@ -69,7 +78,7 @@ export default function Contact() {
                       <label htmlFor="email" className="form-label">Email *</label>
                       <input 
                         type="email" 
-                        id="email" 
+                        name="email" 
                         className="form-control form-control-lg" 
                         required 
                       />
@@ -82,7 +91,7 @@ export default function Contact() {
                       <label htmlFor="phone" className="form-label">Phone</label>
                       <input 
                         type="tel" 
-                        id="phone" 
+                        name="phone" 
                         className="form-control form-control-lg" 
                       />
                     </div>
@@ -91,14 +100,14 @@ export default function Contact() {
                       <label htmlFor="company" className="form-label">Company</label>
                       <input 
                         type="text" 
-                        id="company" 
+                        name="company" 
                         className="form-control form-control-lg" 
                       />
                     </div>
                     
                     <div className="col-12">
                       <label htmlFor="service" className="form-label">Service Interest</label>
-                      <select id="service" className="form-select form-select-lg">
+                      <select name="service" className="form-select form-select-lg">
                         <option value="">Select a service...</option>
                         <option value="web-development">Web Development</option>
                         <option value="ui-ux-design">UI/UX Design</option>
@@ -112,7 +121,7 @@ export default function Contact() {
                     <div className="col-12">
                       <label htmlFor="message" className="form-label">Message *</label>
                       <textarea 
-                        id="message" 
+                        name="message" 
                         className="form-control form-control-lg" 
                         rows={5} 
                         required

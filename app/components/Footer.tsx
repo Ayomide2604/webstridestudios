@@ -159,8 +159,8 @@ export default function Footer() {
                 <h6 className="mb-2 text-white">Contact</h6>
                 <ul className="nav flex-column mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a href="mailto:contact@webstridestudios.ca" className="nav-link d-inline-block px-0 pt-1 pb-2 text-light">
-                      contact@webstridestudios.ca
+                    <a href="mailto:info@webstridestudios.ca" className="nav-link d-inline-block px-0 pt-1 pb-2 text-light">
+                      info@webstridestudios.ca
                     </a>
                   </li>
                   <li className="nav-item">

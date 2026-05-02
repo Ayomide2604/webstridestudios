@@ -2,20 +2,23 @@ interface TestimonialCardProps {
   quote: string;
   author: string;
   position: string;
-  avatar: string;
+  avatar?: string;
 }
 
 export default function TestimonialCard({ quote, author, position, avatar }: TestimonialCardProps) {
+  const defaultAvatar = "assets/img/avatar.png";
+  const avatarSrc = avatar || defaultAvatar;
+
   return (
-    <figure className="card h-100 position-relative border-0 bg-transparent">
-      <blockquote className="card-body p-0 mb-0">
+    <figure className="card h-100 position-relative border shadow-sm">
+      <blockquote className="card-body p-4 mb-0">
         <p className="fs-lg mb-0">
           {quote}
         </p>
       </blockquote>
-      <figcaption className="card-footer border-0 d-flex align-items-center w-100 pb-2">
+      <figcaption className="card-footer border-0 d-flex align-items-center w-100 pb-3 pt-0">
         <img
-          src={avatar}
+          src={avatarSrc}
           width={48}
           className="rounded-circle"
           alt={author}

@@ -1,5 +1,4 @@
 import TestimonialCard from "../components/TestimonialCard";
-import TestimonialStats from "../components/TestimonialStats";
 
 export default function Testimonials() {
   const testimonials = [
@@ -24,43 +23,43 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="container pb-5 mb-md-2 mb-xl-4">
-      <div className="row pb-lg-2">
-        <div className="col-md-5 mb-4 mb-md-0">
-          <TestimonialStats />
+    <section className="container py-5 my-2 my-md-4 my-lg-5">
+      <div className="text-center mb-5">
+        <h2 className="h1 mb-4">What Our Clients Say</h2>
+        <p className="fs-lg text-muted">
+          Don't just take our word for it - hear from our satisfied clients about their experience working with Webstride Studios.
+        </p>
+      </div>
+      
+      <div className="card border-0 shadow-sm p-4 p-xxl-5">
+        {/* Slider prev/next buttons */}
+        <div className="d-flex justify-content-end pb-4 mb-2">
+          <div className="d-flex">
+            <button
+              type="button"
+              id="testimonial-prev"
+              className="btn btn-prev btn-icon btn-sm me-2"
+              aria-label="Previous"
+            >
+              <i className="bx bx-chevron-left" />
+            </button>
+            <button
+              type="button"
+              id="testimonial-next"
+              className="btn btn-next btn-icon btn-sm ms-2"
+              aria-label="Next"
+            >
+              <i className="bx bx-chevron-right" />
+            </button>
+          </div>
         </div>
-        <div className="col-md-7">
-          <div className="card border-0 shadow-sm p-4 p-xxl-5">
-            {/* Slider prev/next buttons + Quotation mark */}
-            <div className="d-flex justify-content-between pb-4 mb-2">
-              <span className="btn btn-icon btn-primary btn-lg shadow-primary pe-none">
-                <i className="bx bxs-quote-left" />
-              </span>
-              <div className="d-flex">
-                <button
-                  type="button"
-                  id="testimonial-prev"
-                  className="btn btn-prev btn-icon btn-sm me-2"
-                  aria-label="Previous"
-                >
-                  <i className="bx bx-chevron-left" />
-                </button>
-                <button
-                  type="button"
-                  id="testimonial-next"
-                  className="btn btn-next btn-icon btn-sm ms-2"
-                  aria-label="Next"
-                >
-                  <i className="bx bx-chevron-right" />
-                </button>
-              </div>
-            </div>
-            
-            {/* Slider */}
-            <div
-              className="swiper mx-0 mb-md-n2 mb-xxl-n3"
-              data-swiper-options='{
-              "spaceBetween": 24,
+        
+        {/* Slider */}
+        <div
+          className="swiper mx-0 mb-md-n2 mb-xxl-n3"
+          data-swiper-options='{
+              "spaceBetween": 30,
+              "slidesPerView": 1,
               "loop": true,
               "pagination": {
                 "el": ".swiper-pagination",
@@ -69,29 +68,33 @@ export default function Testimonials() {
               "navigation": {
                 "prevEl": "#testimonial-prev",
                 "nextEl": "#testimonial-next"
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 60
+                }
               }
             }'
-            >
-              <div className="swiper-wrapper">
-                {testimonials.map((testimonial, index) => (
-                  <div 
-                    key={index}
-                    className="swiper-slide h-auto" 
-                    data-swiper-tab={`#author-${index + 1}`}
-                  >
-                    <TestimonialCard
-                      quote={testimonial.quote}
-                      author={testimonial.author}
-                      position={testimonial.position}
-                      avatar={testimonial.avatar}
-                    />
-                  </div>
-                ))}
+        >
+          <div className="swiper-wrapper">
+            {testimonials.map((testimonial, index) => (
+              <div 
+                key={index}
+                className="swiper-slide h-auto" 
+                data-swiper-tab={`#author-${index + 1}`}
+              >
+                <TestimonialCard
+                  quote={testimonial.quote}
+                  author={testimonial.author}
+                  position={testimonial.position}
+                  avatar={testimonial.avatar}
+                />
               </div>
-              {/* Pagination (bullets) */}
-              <div className="swiper-pagination position-relative pt-3 mt-4" />
-            </div>
+            ))}
           </div>
+          {/* Pagination (bullets) */}
+          <div className="swiper-pagination position-relative pt-3 mt-4" />
         </div>
       </div>
     </section>

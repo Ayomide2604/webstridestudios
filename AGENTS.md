@@ -7,7 +7,7 @@ This is the official website rebuild for Webstride Studios, a web development co
 - **Website**: www.webstridestudios.ca
 - **Location**: Edmonton, Canada
 - **Services**: Web Development, UI/UX Design, SEO Optimization, E-Commerce Solutions
-- **Contact**: contact@webstridestudios.ca, 437-685-5676
+- **Contact**: info@webstridestudios.ca, 437-685-5676
 
 ## Project Structure
 - **Framework**: Next.js with TypeScript
