@@ -126,21 +126,27 @@ export default function HeroSection() {
         <i className="bx bx-envelope" />
       </a>
       <a
-        href="#"
+        href="https://www.facebook.com/share/1CRJEtVcrm/?mibextid=wwXIfr"
+        target="_blank"
+        rel="noopener noreferrer"
         className="btn btn-icon btn-secondary btn-facebook rounded-circle me-2"
         aria-label="Facebook"
       >
         <i className="bx bxl-facebook" />
       </a>
       <a
-        href="#"
-        className="btn btn-icon btn-secondary btn-twitter rounded-circle me-2"
-        aria-label="Twitter"
+        href="https://wa.me/14376855676"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="btn btn-icon btn-secondary rounded-circle me-2"
+        aria-label="WhatsApp"
       >
-        <i className="bx bxl-twitter" />
+        <i className="bx bxl-whatsapp" />
       </a>
       <a
-        href="#"
+        href="https://www.instagram.com/webstridestudiosca"
+        target="_blank"
+        rel="noopener noreferrer"
         className="btn btn-icon btn-secondary btn-instagram rounded-circle me-2"
         aria-label="Instagram"
       >
