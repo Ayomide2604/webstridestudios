@@ -61,10 +61,10 @@ export default function Footer() {
                     </li>
                     <li className="nav-item">
                       <a
-                        href="/projects"
+                        href="/portfolio"
                         className="nav-link d-inline-block px-0 pt-1 pb-2 text-light"
                       >
-                        Projects
+                        Portfolio
                       </a>
                     </li>
                     <li className="nav-item">
@@ -92,17 +92,7 @@ export default function Footer() {
                       </a>
                     </li>
                   </ul>
-                  <ul className="nav flex-column mb-2 mb-lg-0">
-                    <li className="nav-item">
-                      <a
-                        href="/privacy"
-                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                                  </div>
               </div>
               <div className="col-xl-4 col-lg-3">
                 <h6 className="mb-2">
@@ -122,58 +112,56 @@ export default function Footer() {
                   <ul className="nav flex-column mb-2 mb-lg-0">
                     <li className="nav-item">
                       <a
-                        href="#"
-                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light"
+                        href="https://www.facebook.com/share/1CRJEtVcrm/?mibextid=wwXIfr"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light d-flex align-items-center"
                       >
+                        <i className="bi bi-facebook text-white me-2"></i>
                         Facebook
                       </a>
                     </li>
                     <li className="nav-item">
                       <a
-                        href="#"
-                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light"
+                        href="https://wa.me/14376855676"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light d-flex align-items-center"
                       >
-                        LinkedIn
+                        <i className="bi bi-whatsapp text-white me-2"></i>
+                        WhatsApp
                       </a>
                     </li>
                     <li className="nav-item">
                       <a
-                        href="#"
-                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light"
+                        href="https://www.instagram.com/webstridestudiosca"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light d-flex align-items-center"
                       >
-                        Twitter
-                      </a>
-                    </li>
-                    <li className="nav-item">
-                      <a
-                        href="#"
-                        className="nav-link d-inline-block px-0 pt-1 pb-2 text-light"
-                      >
+                        <i className="bi bi-instagram text-white me-2"></i>
                         Instagram
                       </a>
                     </li>
-                  </ul>
+                                      </ul>
                 </div>
               </div>
               <div className="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 className="mb-2 text-white">Contact</h6>
                 <ul className="nav flex-column mb-2 mb-lg-0">
                   <li className="nav-item">
-                    <a href="mailto:info@webstridestudios.ca" className="nav-link d-inline-block px-0 pt-1 pb-2 text-light">
+                    <a href="mailto:info@webstridestudios.ca" className="nav-link d-inline-block px-0 pt-1 pb-2 text-light d-flex align-items-center">
+                      <i className="bi bi-envelope text-white me-2"></i>
                       info@webstridestudios.ca
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a href="tel:+14376855676" className="nav-link d-inline-block px-0 pt-1 pb-2 text-light">
+                    <a href="tel:+14376855676" className="nav-link d-inline-block px-0 pt-1 pb-2 text-light d-flex align-items-center">
+                      <i className="bi bi-telephone text-white me-2"></i>
                       437-685-5676
                     </a>
                   </li>
-                  <li className="nav-item">
-                    <a href="https://wa.me/14376855676" className="nav-link d-inline-block px-0 pt-1 pb-2 text-light">
-                      WhatsApp: +1 437-685-5676
-                    </a>
-                  </li>
-                </ul>
+                                  </ul>
               </div>
             </div>
           </div>
