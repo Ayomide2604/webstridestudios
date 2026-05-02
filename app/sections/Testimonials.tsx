@@ -1,25 +1,28 @@
 import TestimonialCard from "../components/TestimonialCard";
 
+interface Testimonial {
+  quote: string;
+  author: string;
+  position: string;
+  avatar?: string; // Optional avatar property
+}
+
 export default function Testimonials() {
-  const testimonials = [
+  const testimonials: Testimonial[] = [
     {
       quote: "Webstride Studios transformed our online presence completely. Their attention to detail and expertise in web development helped us increase our conversion rates by 40%. The team was professional, responsive, and delivered exactly what we needed.",
       author: "Sarah Johnson",
       position: "CEO at Edmonton Tech Solutions",
-      avatar: null
     },
     {
-      quote: "Working with Webstride Studios was the best decision we made for our e-commerce platform. They built us a beautiful, fast, and secure online store that has significantly boosted our sales. Highly recommend their services!",
+      quote: "Working with Webstride Studios was the best decision we made for our e-commerce platform. They built us a beautiful, fast, and secure online store that has significantly boosted our sales. Highly recommend our services!",
       author: "Michael Chen",
       position: "Owner at Calgary Retail Co.",
-      avatar: null
-
     },
     {
       quote: "The SEO optimization services from Webstride Studios have been game-changing for our business. We went from page 3 to page 1 on Google for our main keywords. Their ongoing support and maintenance have been invaluable.",
       author: "Amanda Roberts",
       position: "Marketing Director at Alberta Services",
-      avatar: null
     }
   ];
 
