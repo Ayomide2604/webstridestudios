@@ -1,7 +1,10 @@
+"use client"
 import Image from 'next/image'
 import ThemeSwitch from './ThemeSwitch'
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+  const pathname = usePathname()
   return (
     <header className="header navbar navbar-expand-lg bg-light navbar-sticky ">
       <div className="container px-3">
@@ -38,13 +41,13 @@ export default function Header() {
           <div className="offcanvas-body" >
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 ms-3 ms-lg-0">
               <li className="nav-item">
-                <a href="/" className="nav-link active" aria-current="page">
+                <a href="/" className={`nav-link ${pathname === '/' ? 'active' : ''}`} aria-current="page">
                   Home
                 </a>
               </li>
 
               <li className="nav-item">
-                <a href="/about" className="nav-link">
+                <a href="/about" className={`nav-link ${pathname === '/about' ? 'active' : ''}`}>
                   About
                 </a>
               </li>
@@ -52,39 +55,39 @@ export default function Header() {
               <li className="nav-item dropdown">
                 <a
                   href="#"
-                  className="nav-link dropdown-toggle"
+                  className={`nav-link dropdown-toggle ${pathname.startsWith('/services') ? 'active' : ''}`}
                   data-bs-toggle="dropdown"
                 >
                   Services
                 </a>
                 <ul className="dropdown-menu">
                   <li>
-                    <a href="/services/web-development" className="dropdown-item">
+                    <a href="/services/web-development" className={`dropdown-item ${pathname === '/services/web-development' ? 'active' : ''}`}>
                       Web Development
                     </a>
                   </li>
                   <li>
-                    <a href="/services/ui-ux-design" className="dropdown-item">
+                    <a href="/services/ui-ux-design" className={`dropdown-item ${pathname === '/services/ui-ux-design' ? 'active' : ''}`}>
                       UI/UX Design
                     </a>
                   </li>
                   <li>
-                    <a href="/services/seo-optimization" className="dropdown-item">
+                    <a href="/services/seo-optimization" className={`dropdown-item ${pathname === '/services/seo-optimization' ? 'active' : ''}`}>
                       SEO Optimization
                     </a>
                   </li>
                   <li>
-                    <a href="/services/maintenance-support" className="dropdown-item">
+                    <a href="/services/maintenance-support" className={`dropdown-item ${pathname === '/services/maintenance-support' ? 'active' : ''}`}>
                       Maintenance & Support
                     </a>
                   </li>
                   <li>
-                    <a href="/services/responsive-design" className="dropdown-item">
+                    <a href="/services/responsive-design" className={`dropdown-item ${pathname === '/services/responsive-design' ? 'active' : ''}`}>
                       Responsive Design
                     </a>
                   </li>
                   <li>
-                    <a href="/services/website-hosting" className="dropdown-item">
+                    <a href="/services/website-hosting" className={`dropdown-item ${pathname === '/services/website-hosting' ? 'active' : ''}`}>
                       Website Hosting
                     </a>
                   </li>
@@ -92,13 +95,19 @@ export default function Header() {
               </li>
 
               <li className="nav-item">
-                <a href="/portfolio" className="nav-link">
+                <a href="/portfolio" className={`nav-link ${pathname === '/portfolio' ? 'active' : ''}`}>
                   Portfolio
                 </a>
               </li>
 
               <li className="nav-item">
-                <a href="/contact" className="nav-link">
+                <a href="/knowledge-base" className={`nav-link ${pathname === '/knowledge-base' ? 'active' : ''}`}>
+                  Knowledge Base
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a href="/contact" className={`nav-link ${pathname === '/contact' || pathname.startsWith('/contact/') ? 'active' : ''}`}>
                   Contact Us
                 </a>
               </li>
