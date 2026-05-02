@@ -45,38 +45,23 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <ScrollToTop/>
+          {/* <ScrollToTop/> */}
         </main>
         <Script id="tawk-to-script" strategy="afterInteractive">
           {`
-            window.Tawk_API = window.Tawk_API || {};
-            window.Tawk_LoadStart = new Date();
-            
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
             (function(){
-              var s1 = document.createElement("script");
-              var s0 = document.getElementsByTagName("script")[0];
-              s1.async = true;
-              s1.src = 'https://embed.tawk.to/69f548b352b26a1c3925a600/1h6k8d6h5';
-              s1.charset = 'UTF-8';
-              s1.setAttribute('crossorigin', '*');
-              s1.onload = function() {
-                console.log('Tawk.to script loaded');
-                setTimeout(function() {
-                  var tawkWidget = document.querySelector('iframe[title*="chat widget"]');
-                  if (tawkWidget) {
-                    console.log('Tawk.to widget found:', tawkWidget);
-                  } else {
-                    console.log('Tawk.to widget not found after 3 seconds');
-                  }
-                }, 3000);
-              };
-              s1.onerror = function() {
-                console.error('Tawk.to script failed to load');
-              };
-              s0.parentNode.insertBefore(s1, s0);
+              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+              s1.async=true;
+              s1.src='https://embed.tawk.to/69f548b352b26a1c3925a600/1jnj27vc0';
+              s1.charset='UTF-8';
+              s1.setAttribute('crossorigin','*');
+              s0.parentNode.insertBefore(s1,s0);
             })();
           `}
         </Script>
+
+   
         <Script src="/assets/js/theme-switcher.js" />
         <Script src="/assets/vendor/jarallax/dist/jarallax.min.js" />
         <Script src="/assets/vendor/swiper/swiper-bundle.min.js" />
