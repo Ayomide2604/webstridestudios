@@ -1,52 +1,28 @@
 export default function PortfolioProjects() {
   const projects = [
     {
-      title: "Edmonton Tech Solutions",
-      category: "Web Development",
-      description: "Custom corporate website with advanced features and responsive design.",
-      image: "assets/img/portfolio/01.jpg",
-      tags: ["React", "Node.js", "MongoDB"],
-      link: "#"
+      title: "Handyman Plus Services",
+      category: "Service Website",
+      description: "Professional handyman services website showcasing 25 years of quality home repairs and maintenance expertise.",
+      image: "assets/img/projects/handymanplus/home.png",
+      tags: ["Responsive Design", "Service Showcase", "Contact Forms"],
+      link: "/portfolio/handyman-plus-services"
     },
     {
-      title: "Calgary Retail Co.",
-      category: "E-commerce",
-      description: "Full-featured online store with payment integration and inventory management.",
-      image: "assets/img/portfolio/02.jpg", 
-      tags: ["Shopify", "Custom Theme", "API Integration"],
-      link: "#"
+      title: "2Women and a Lady Cleaning",
+      category: "Service Website",
+      description: "Female-owned cleaning services website with comprehensive service offerings and booking system.",
+      image: "assets/img/projects/2women/home.png",
+      tags: ["Modern Design", "Service Pages", "Client Testimonials"],
+      link: "/portfolio/2women-and-lady-cleaning"
     },
     {
-      title: "Alberta Services",
-      category: "Web Development",
-      description: "Professional services website with booking system and client portal.",
-      image: "assets/img/portfolio/03.jpg",
-      tags: ["Next.js", "TypeScript", "PostgreSQL"],
-      link: "#"
-    },
-    {
-      title: "Mountain View Dental",
-      category: "Web Design",
-      description: "Modern dental practice website with appointment scheduling.",
-      image: "assets/img/portfolio/04.jpg",
-      tags: ["WordPress", "Custom Design", "SEO"],
-      link: "#"
-    },
-    {
-      title: "Prairie Logistics",
-      category: "Web Development",
-      description: "Logistics management system with real-time tracking dashboard.",
-      image: "assets/img/portfolio/05.jpg",
-      tags: ["Vue.js", "Laravel", "MySQL"],
-      link: "#"
-    },
-    {
-      title: "Northern Beauty Spa",
-      category: "Web Design",
-      description: "Elegant spa website with online booking and gallery.",
-      image: "assets/img/portfolio/06.jpg",
-      tags: ["HTML5", "CSS3", "JavaScript"],
-      link: "#"
+      title: "Thrive Physiotherapy",
+      category: "Healthcare Website",
+      description: "Professional physiotherapy practice website with patient-focused design and appointment features.",
+      image: "assets/img/projects/thrivephysio/home.png",
+      tags: ["Healthcare", "Patient Portal", "Modern UI"],
+      link: "/portfolio/thrive-physiotherapy"
     }
   ];
 
