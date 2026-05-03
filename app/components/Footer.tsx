@@ -1,3 +1,5 @@
+import NewsletterSignupForm from "./NewsletterSignupForm";
+
 export default function Footer() {
   return (
     <footer className="footer bg-dark pt-5 pb-4 pb-lg-5" data-bs-theme="dark">
@@ -11,27 +13,7 @@ export default function Footer() {
             <p className="fs-sm text-light opacity-70 pb-lg-3 mb-4">
               Based in Edmonton, serving businesses nationwide with custom websites that convert. We combine technical expertise with creative vision to deliver websites that drive measurable results.
             </p>
-            <form className="needs-validation" noValidate={true}>
-              <label htmlFor="subscr-email" className="form-label">
-                Subscribe to our newsletter
-              </label>
-              <div className="input-group">
-                <input
-                  type="email"
-                  id="subscr-email"
-                  className="form-control rounded-start ps-5"
-                  placeholder="Your email"
-                  required={true}
-                />
-                <i className="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5" />
-                <div className="invalid-tooltip position-absolute top-100 start-0">
-                  Please provide a valid email address.
-                </div>
-                <button type="submit" className="btn btn-primary">
-                  Subscribe
-                </button>
-              </div>
-            </form>
+            <NewsletterSignupForm />
           </div>
           <div className="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
             <div id="footer-links" className="row">
